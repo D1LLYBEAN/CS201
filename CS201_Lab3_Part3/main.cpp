@@ -13,22 +13,21 @@ using std::string;
 using std::getline;
 using std::find;
 using std::tolower;
-#include <locale>
-using std::locale;
 
 int main()
 {
     cout << "Enter a food: ";
     string userFood;
     getline(cin, userFood);
-    for( int i = 0; i < userFood.size(); i++)
+    for( int i = 0; i < userFood.size(); i++)   // loop converts entire string to lowercase
     {
-        userFood[i] = tolower(userFood[i]);
+        userFood[i] = tolower(userFood[i]); // converts single character to lowercase
     }
-    //cout << userFood << endl; prints input out in lowercase, for debugging.
-    if (userFood.find("pizza") != null)
+    int found = userFood.find("pizza"); // returns position of first "pizza" in string, -1 if nothing is found
+    userFood[0] = toupper(userFood[0]); // converts first character back to uppercase, for grammar purposes
+    if (found != -1)    // if "pizza" is found...
     {
-        cout << "I think " << userFood << " tastes good." << endl;
+        cout << userFood << " tastes good." << endl;
     }
     else
     {
