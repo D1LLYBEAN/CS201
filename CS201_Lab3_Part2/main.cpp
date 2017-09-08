@@ -11,12 +11,17 @@ using std::endl;
 #include <string>
 using std::string;
 using std::getline;
+#include <sstream>
+using std::istringstream;
 
 int main()
 {
     cout << "Enter three integers, separated by spaces (i1 i2 i3): ";
+    string userIntString;
+    getline(cin, userIntString);
+    istringstream userIntSS(userIntString);
     int userInts[3];
-    cin >> userInts[0] >> userInts[1] >> userInts [2];
+    userIntSS >> userInts[0] >> userInts[1] >> userInts [2];
     cout << "The sum of the three integers is " << userInts [0] + userInts[1] + userInts[2] << endl;
 
     return 0;

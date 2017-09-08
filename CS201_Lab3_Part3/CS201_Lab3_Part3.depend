@@ -1,8 +1,7 @@
 # depslib dependency file v1.0
-1504725513 source:c:\users\n1nja\desktop\cs201\cs201_lab3_part3\main.cpp
+1504893377 source:c:\users\n1nja\desktop\cs201\cs201_lab3_part3\main.cpp
 	<iostream>
 	<string>
-	<locale>
 
 1504766762 source:c:\users\r0gue\desktop\cs201\cs201_lab3_part3\main.cpp
 	<iostream>
