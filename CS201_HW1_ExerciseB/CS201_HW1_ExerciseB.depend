@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1504943986 source:c:\users\r0gue\desktop\cs201\cs201_hw1_exerciseb\diamond.cpp
+	<iostream>
+	<string>
+	<sstream>
+
