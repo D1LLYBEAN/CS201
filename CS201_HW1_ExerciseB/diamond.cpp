@@ -13,6 +13,8 @@ using std::string;
 using std::getline;
 #include <sstream>
 using std::istringstream;
+#include<stdlib.h>
+//using std::abs;
 
 int main()
 {
@@ -22,7 +24,7 @@ int main()
     getline(cin, userInput);
     if (!cin)
     {
-        cout << "! Error: cin failure!" << endl;
+        cout << endl << "! Error: cin failure!" << endl;
         return 1;
     }
 
@@ -31,51 +33,32 @@ int main()
     iss >> userInt;
     if (!iss)
     {
-        cout << "! Error: iss not an integer !" << endl;
+        cout << endl << "! Error: iss not an integer !" << endl;
         return 1;
     }
 
     if (userInt <= 0)
     {
-        cout << "! Error: input length " << userInt << " !" << endl;
+        cout << endl << "! Error: input length " << userInt << " less than one!" << endl;
         return 1;
     }
 
-    cout << endl; // for personal formatting preferences
-    for(int i = 0; i < userInt; i++) // counting up this time
+    cout << endl; // for personal formatting preference
+    for (int i = -userInt; i <= userInt; i++)
     {
-        for(int j = 1; j <= (2 * userInt) - 1; j++) // j needs to start at 1
+        for (int j = -userInt; j <= userInt; j ++)
         {
-            if(j < userInt - i || j > userInt + i) // not diamond
+            if (abs(i) + abs(j) > userInt) // form diamond outline with " "
             {
                 cout << " ";
             }
-            else if ((i % 2) == (j % 2)) // periods
+            else if ((abs(i) % 2) == (abs(j) % 2)) // checkerboard "." within diamond zone
             {
                 cout << ".";
             }
             else
             {
-                cout << "#"; // diamond
-            }
-        }
-        cout << endl;
-    }
-    for(int i = userInt - 2; i >= 0; i--) // counting down this time
-    {
-        for(int j = 1; j <= (2 * userInt) - 1; j++) // j needs to start at 1
-        {
-            if(j < userInt - i || j > userInt + i ) // not diamond
-            {
-                cout << " ";
-            }
-            else if ((i % 2) == (j % 2)) // periods
-            {
-                cout << ".";
-            }
-            else // diamond
-            {
-                cout << "#";
+                cout << "#"; // fill in remaining spaces within diamond with "#"
             }
         }
         cout << endl;
