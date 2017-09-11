@@ -31,27 +31,36 @@ int main()
         return 1;
     }
 
-    cout << "**";
-    for(int i = 0; i < userInputSize; i++)
+    string outputString;
+    for(int i = 0; i < userInputSize + 4; i++)      // *************
     {
-        cout << "*";
+        outputString += "*";
     }
-    cout << "**" << endl << "* ";
-    for(int i = 0; i < userInputSize; i++)
+    outputString += "\n*";
+    for(int i = 0; i < userInputSize + 2; i++)      // *           *
     {
-        cout << " ";
+        outputString += " ";
     }
-    cout << " *" << endl << "* " << userInput << " *" << endl << "* ";
-    for(int i = 0; i < userInputSize; i++)
+    outputString += "*\n* " + userInput + " *\n*";  // * userInput *
+    for(int i = 0; i < userInputSize + 2; i++)      // *           *
     {
-        cout << " ";
+        outputString += " ";
     }
-    cout << " *" << endl << "**";
-    for(int i = 0; i < userInputSize; i++)
+    outputString += "*\n";
+    for(int i = 0; i < userInputSize + 4; i++)      // *************
     {
-        cout << "*";
+        outputString += "*";
     }
-    cout << "**" << endl;
+    cout << endl << outputString << endl;
+
+    // OUTPUT:
+    //
+    // *************
+    // *           *
+    // * userInput *
+    // *           *
+    // *************
+    //
 
     return 0;
 }
