@@ -14,7 +14,6 @@ using std::getline;
 #include <sstream>
 using std::istringstream;
 #include<stdlib.h>
-//using std::abs;
 
 int main()
 {
