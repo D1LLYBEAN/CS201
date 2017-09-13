@@ -42,26 +42,27 @@ int main()
         return 1;
     }
 
-    cout << endl; // for personal formatting preference
+    string outputString = "\n";
     for (int i = -userInt; i <= userInt; i++)
     {
         for (int j = -userInt; j <= userInt; j ++)
         {
             if (abs(i) + abs(j) > userInt) // form diamond outline with " "
             {
-                cout << " ";
+                outputString += " ";
             }
             else if ((abs(i) % 2) == (abs(j) % 2)) // checkerboard "." within diamond zone
             {
-                cout << ".";
+                outputString += ".";
             }
             else
             {
-                cout << "#"; // fill in remaining spaces within diamond with "#"
+                outputString += "#"; // fill in remaining spaces within diamond with "#"
             }
         }
-        cout << endl;
+        outputString += "\n";
     }
+    cout << outputString;
 
     return 0;
 }
