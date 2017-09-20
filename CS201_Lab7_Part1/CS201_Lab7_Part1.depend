@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1505502097 source:c:\users\n1nja\desktop\cs201\cs201_lab7_part1\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<fstream>
+
