@@ -13,6 +13,7 @@ using std::string;
 using std::getline;
 #include <sstream>
 using std::istringstream;
+using std::ostringstream;
 
 
 string DivideInt(int intToDivide)
@@ -22,10 +23,16 @@ string DivideInt(int intToDivide)
     {
         if ((intToDivide % i) == 0)
         {
-            returnString += i + '0';
+            ostringstream ss;
+            ss << i;
+            returnString += ss.str();
             returnString += ", ";
         }
     }
+    ostringstream ss;
+    ss << intToDivide;
+    returnString += ss.str();
+    returnString += ".";
     return returnString;
 }
 
@@ -36,7 +43,7 @@ int main()
     string userString;
     while(true)
     {
-        cout << "Enter integer to be squared: ";
+        cout << "Enter integer to be divided: ";
         getline(cin, userString);
         if (!cin)
         {
