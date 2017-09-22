@@ -1,8 +1,8 @@
-// collatz.cpp
+// main.cpp
 // CS201_Lab10_Part1
 // Dillon Mills
 // Created on 9/22/17
-//
+// Takes user bounds and outputs all values between them divisible by 3.
 
 #include <iostream>
 using std::cin;
