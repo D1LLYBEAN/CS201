@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1506364662 source:c:\users\n1nja\desktop\cs201\cs201_hw3_exerciseb\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+
