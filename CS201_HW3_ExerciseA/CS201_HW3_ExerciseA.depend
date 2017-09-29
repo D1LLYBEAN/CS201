@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1506364751 source:c:\users\n1nja\desktop\cs201\cs201_hw3_exercisea\sumnums.cpp
+	<iostream>
+	<string>
+	<sstream>
+

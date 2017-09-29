@@ -30,6 +30,7 @@ int isPrime(int intToTest)
 
 int main()
 {
+    cout << "Also saved to primes.txt" << endl << endl;
     string outputString;
     for (int i = 1; i <= 100; i++)
     {
