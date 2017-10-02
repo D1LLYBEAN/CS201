@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1506969555 source:c:\users\n1nja\desktop\cs201\cs201_lab14_part2\lookup.cpp
+	<iostream>
+	<vector>
+	<string>
+	<sstream>
+
