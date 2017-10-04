@@ -1,8 +1,8 @@
-// main.cpp
-// CS201_Lab12_Part3
+// gcd.cpp
+// CS201_HW4_ExerciseA
 // Dillon Mills
-// Created on 9/27/17
-// Inputs an arbitrary number of lines of text from the user. After all the input is done, the program prints out every line (containing "x") that was typed.
+// Created on 10/2/17
+// inputs two nonnegative integers from the user, prints the GCD of the two integers, and then repeats.
 
 #include <iostream>
 using std::cin;
@@ -44,7 +44,7 @@ int main()
         }
         if (userInput == "\\")
         {
-            cout << endl << "Exiting..." << endl << endl;
+            cout << endl << "Exiting..." << endl;
             break;
         }
         istringstream iss(userInput);

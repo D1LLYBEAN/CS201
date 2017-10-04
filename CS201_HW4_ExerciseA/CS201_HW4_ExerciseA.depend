@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1506970184 source:c:\users\n1nja\desktop\cs201\cs201_hw4_exercisea\gcd.cpp
+1506971393 source:c:\users\n1nja\desktop\cs201\cs201_hw4_exercisea\gcd.cpp
 	<iostream>
 	<string>
 	<vector>
+	<sstream>
 
