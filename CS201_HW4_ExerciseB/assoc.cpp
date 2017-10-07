@@ -1,5 +1,5 @@
 // assoc.cpp
-// CS201_HW4_ExerciseBS
+// CS201_HW4_ExerciseB
 // Dillon Mills
 // Created on 10/4/17
 // Allows the user to create, modify, and query an associative dataset.
