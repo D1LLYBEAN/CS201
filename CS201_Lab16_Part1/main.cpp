@@ -18,7 +18,13 @@ using std::istringstream;
 
 int main()
 {
-    vector<int> values {10, 1, 9, 2, 8, 3, 7, 4, 6, 5};
+    vector<int> values(2000);
+
+    for(int i = 0; i < values.size(); i++)
+    {
+        values[i] = values.size() - i;
+    }
+
     cout << "Original:\n";
     for (int i = 0; i < values.size(); i++)
     {
