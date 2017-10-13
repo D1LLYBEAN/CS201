@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1507921466 source:c:\users\n1nja\desktop\cs201\cs201_lab19_part1\main.cpp
+	<iostream>
+	<string>
+	<cmath>
+
