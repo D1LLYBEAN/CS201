@@ -10,11 +10,9 @@ using std::endl;
 #include <conio.h>
 
 
-// Main program
-// Input an integer with error checking.
 int main()
 {
-    cout << "Enter ESC at any point to exit!" << endl;
+    cout << "Press ESC at any point to exit!" << endl;
     int key;
     bool loop = true;
     while (loop)
