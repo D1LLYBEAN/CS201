@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1505345182 source:c:\users\n1nja\desktop\cs201\realtimeinput\main.cpp
+1508354143 source:c:\users\n1nja\desktop\cs201\realtimeinput\main.cpp
 	<iostream>
+	<conio.h>
+	<stdlib.h>
+	<vector>
 	<string>
-	<sstream>
-	<stdio.h>
 
