@@ -42,7 +42,7 @@ void printMap(int pPosX, int pPosY, char avatar)
 int main()
 {
     vector<int> pPos(2);
-    char pAvat = '\x18';
+    char pAvat = 30;
 
     printMap(pPos[0],pPos[1],pAvat);
     cout << "\nWelcome to my game!\n";
@@ -69,19 +69,19 @@ int main()
         {
             case 'W':
                 pPos[0] += (pPos[0] < 15)? 1 : 0;
-                pAvat = '\x18';
+                pAvat = 30;
                 break;
             case 'A':
                 pPos[1] -= (pPos[1] > 0)? 1 : 0;
-                pAvat = '\x1a'; // can't get it to print left arrow!!!
+                pAvat = 17; // can't get it to print left arrow!!!
                 break;
             case 'S':
                 pPos[0] -= (pPos[0] > 0)? 1 : 0;
-                pAvat = '\x19';
+                pAvat = 31;
                 break;
             case 'D':
                 pPos[1] += (pPos[1] < 15)? 1 : 0;
-                pAvat = '\x1a';
+                pAvat = 16;
                 break;
             case 27: // ESC
                 cout << endl << "Exiting..." << endl;
@@ -91,7 +91,10 @@ int main()
                 cout << key;
                 break;
         }
-
+        //for(char i=0; i<' '; i++)
+        //{
+        //    cout << (int)i << " " << i << endl;
+        //}
         printMap(pPos[0],pPos[1],pAvat);
     }
 
