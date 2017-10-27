@@ -14,12 +14,14 @@ using std::vector;
 #include <string>
 using std::string;
 
+const int MAPSIZE = 16;
+
 void printMap(int pPosX, int pPosY, char avatar)
 {
-    string outputString = "#" + string(16,'#') + "#\n#";
-    for(int i = 15; i >= 0; i--)
+    string outputString = "#" + string(MAPSIZE,'#') + "#\n#";
+    for(int i = MAPSIZE-1; i >= 0; i--)
     {
-        for(int j = 0; j <= 15; j++)
+        for(int j = 0; j <= MAPSIZE-1; j++)
         {
             if (pPosX == i && pPosY == j)
             {
@@ -32,7 +34,7 @@ void printMap(int pPosX, int pPosY, char avatar)
         }
         outputString += "#\n#";
     }
-    outputString += string(16,'#') + "#\n";
+    outputString += string(MAPSIZE,'#') + "#\n";
 
     system("CLS");
     cout << outputString;
