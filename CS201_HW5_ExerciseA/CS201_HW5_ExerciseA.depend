@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1509389552 source:c:\users\n1nja\desktop\cs201\cs201_hw5_exercisea\spaceroot.cpp
+	<iostream>
+	<vector>
+	<string>
+	<sstream>
+
