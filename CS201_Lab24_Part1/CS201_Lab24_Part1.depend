@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1509563032 source:c:\users\n1nja\desktop\cs201\cs201_lab24_part1\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<tuple>
+	"trunc.hpp"
+
+1509560743 source:c:\users\n1nja\desktop\cs201\cs201_lab24_part1\trunc.cpp
+	"trunc.hpp"
+	<tuple>
+	<string>
+	<cctype>
+
+1509560925 c:\users\n1nja\desktop\cs201\cs201_lab24_part1\trunc.hpp
+	<tuple>
+	<string>
+

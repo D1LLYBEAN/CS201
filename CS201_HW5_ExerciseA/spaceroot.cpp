@@ -53,12 +53,16 @@ int main()
         {
             digits.push_back(sqrtDouble % 10);
             sqrtDouble = sqrtDouble / 10;
-            if(sqrtDouble < 1){break;}
+            if(sqrtDouble < 1){ break; }
         }
 
-        for(int i = digits.size(); i >= 0; i++)
+        for(int i = digits.size()-1; i >= 0; i--)
         {
             cout << digits[i] << " ";
+            if (i == 8)
+            {
+                cout << ". ";
+            }
         }
         cout << endl;
     }
