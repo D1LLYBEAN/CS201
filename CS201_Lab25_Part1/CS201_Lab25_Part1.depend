@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1509735975 source:c:\users\n1nja\desktop\cs201\cs201_lab25_part1\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<tuple>
+	"truncstruct.hpp"
+
+1509734814 c:\users\n1nja\desktop\cs201\cs201_lab25_part1\truncstruct.hpp
+	<string>
+
+1509734825 source:c:\users\n1nja\desktop\cs201\cs201_lab25_part1\truncstruct.cpp
+	"truncstruct.hpp"
+	<string>
+	<cctype>
+
