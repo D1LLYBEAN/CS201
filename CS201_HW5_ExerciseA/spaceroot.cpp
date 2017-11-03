@@ -15,7 +15,11 @@ using std::cin;
 using std::string;
 using std::getline;
 #include <sstream>
+using std::ostringstream;
 using std::istringstream;
+#include <iomanip>
+using std::setprecision;
+using std::fixed;
 #include <vector>
 using std::vector;
 #include <math.h>
@@ -25,46 +29,44 @@ int main()
 {
     while(true)
     {
+        // take user input...
         cout << "Type a nonnegative number (empty line to end): ";
         string userLine;
         getline(cin,userLine);
         if(userLine == ""){break;}
 
-        float userFloat;
+        // convert to double...
+        double userDouble;
         istringstream iss(userLine);
-        iss >> userFloat;
+        iss >> userDouble;
+
+        // do error checking...
         if(!iss)
         {
             cout << "\n! Error: iss not a float !\n";
             continue;
         }
-        if(userFloat < 0)
+        if(userDouble < 0)
         {
             cout << "\n! Error: negative number !\n";
             continue;
         }
 
-        int sqrtDouble = (int)(sqrt(userFloat) * 100000000);
+        // convert sqrt(double) to string with 8 digits past the decimal...
+        ostringstream ss;
+        ss << fixed << setprecision(8) << sqrt(userDouble);
+        string outputDouble = ss.str();
 
-        cout << "Spaced-out square root: ";
-
-        vector<int> digits;
-        while (true)
+        // format the spaces into a new string...
+        string outputString(1,ss.str()[0]);
+        for(unsigned int i = 1; i < outputDouble.length(); i++)
         {
-            digits.push_back(sqrtDouble % 10);
-            sqrtDouble = sqrtDouble / 10;
-            if(sqrtDouble < 1){ break; }
+            outputString += " ";
+            outputString += outputDouble[i];
         }
 
-        for(int i = digits.size()-1; i >= 0; i--)
-        {
-            cout << digits[i] << " ";
-            if (i == 8)
-            {
-                cout << ". ";
-            }
-        }
-        cout << endl;
+        // output...
+        cout << endl << outputString << endl << endl;
     }
 
     return 0;

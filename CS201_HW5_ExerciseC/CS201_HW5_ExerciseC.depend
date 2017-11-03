@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1509674508 source:c:\users\r0gue\desktop\cs201\cs201_hw5_exercisec\issorted.cpp
+	<iostream>
+	<sstream>
+	<string>
+	<vector>
+	"issorted.hpp"
+
+1509673426 c:\users\r0gue\desktop\cs201\cs201_hw5_exercisec\issorted.hpp
+	<vector>
+
+1509671896 source:c:\users\r0gue\desktop\cs201\cs201_hw5_exercisec\issorted_test.cpp
+	"issorted.hpp"
+	<iostream>
+	<vector>
+	<string>
+	<cstddef>
+
