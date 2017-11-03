@@ -33,6 +33,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="truncstruct.cpp" />
+		<Unit filename="truncstruct.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
