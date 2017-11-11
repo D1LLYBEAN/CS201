@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1510397564 source:c:\users\r0gue\desktop\cs201\cavegame_conversion_realtimeinput\main.cpp
+	<iostream>
+	<stdio.h>
+	<math.h>
+	<time.h>
+	<windows.h>
+	<conio.h>
+	<sstream>
+	<string>
+
