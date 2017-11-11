@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1509994555 source:c:\users\n1nja\desktop\cs201\cs201_lab26_part1\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	<algorithm>
+

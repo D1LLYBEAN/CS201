@@ -17,7 +17,7 @@ using std::string;
 
 // mechanical constants
 const int MAP_SIZE = 16;
-const int CLS_SIZE = 20;
+//const int CLS_SIZE = 20;
 // graphical constants
 const char PATH = 0xB0;     // ░
 const char WALL = 0xDB;     // █
@@ -55,7 +55,8 @@ void printMap(int pPosX, int pPosY, char avatar)
 void helpText()
 {
     cout << "\n" << (char)0x8B << " is the hero.\n";
-    cout << "Move around with WASD or arrow keys.\n";
+    cout << "wasd or arrow keys to move.\n";
+    cout << "ctrl + wasd to rotate without moving.\n";
     cout << "\nPress ESC at any point to exit.\n";
     cout << "I'll understand...\n";
 }
@@ -93,24 +94,43 @@ int main()
 
         switch (key)
         {
-            case 0xE048:
+            case 'W': // no such luck for arrow keys...
+                if(pAvat == PLAYER_W){ pPos[0] += (pPos[0] < 15)? 1 : 0; }
             case 'w':
+            case 0xE048: //[UP ARROW]
                 pPos[0] += (pPos[0] < 15)? 1 : 0;
+            case 0x0017: // ctrl + w
+            case 0xE08D: // ctrl + [UP ARROW]
                 pAvat = PLAYER_W;
                 break;
-            case 0xE04b:
+
+            case 'A':
+                if(pAvat == PLAYER_A){ pPos[0] += (pPos[0] < 15)? 1 : 0; }
             case 'a':
+            case 0xE04b: // [LEFT ARROW]
                 pPos[1] -= (pPos[1] > 0)? 1 : 0;
+            case 0x0001: // ctrl + a
+            case 0xE073: // ctrl + [LEFT ARROW]
                 pAvat = PLAYER_A;
                 break;
-            case 0xE050:
+
+            case 'S':
+                if(pAvat == PLAYER_W){ pPos[0] += (pPos[0] < 15)? 1 : 0; }
             case 's':
+            case 0xE050: // [DOWN ARROW]
                 pPos[0] -= (pPos[0] > 0)? 1 : 0;
+            case 0x0013: // ctrl + s
+            case 0xE091: // ctrl + [DOWN ARROW]
                 pAvat = PLAYER_S;
                 break;
-            case 0xE04d:
+
+            case 'D':
+                if(pAvat == PLAYER_W){ pPos[0] += (pPos[0] < 15)? 1 : 0; }
             case 'd':
+            case 0xE04d: // [RIGHT ARROW]
                 pPos[1] += (pPos[1] < 15)? 1 : 0;
+            case 0x0004: // ctrl + d
+            case 0xE074: // ctrl + [RIGHT ARROW]
                 pAvat = PLAYER_D;
                 break;
             case 0x1B: // ESC key
@@ -130,7 +150,7 @@ int main()
                 break;
         }
         printMap(pPos[0],pPos[1],pAvat);
-        cout << std::hex << key;
+        cout << "0x" << std::hex << key;
     }
 
     system("CLS");
