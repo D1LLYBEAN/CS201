@@ -105,7 +105,7 @@ int main()
                 break;
 
             case 'A':
-                if(pAvat == PLAYER_A){ pPos[0] += (pPos[0] < 15)? 1 : 0; }
+                if(pAvat == PLAYER_A){ pPos[1] -= (pPos[1] < 15)? 1 : 0; }
             case 'a':
             case 0xE04b: // [LEFT ARROW]
                 pPos[1] -= (pPos[1] > 0)? 1 : 0;
@@ -115,7 +115,7 @@ int main()
                 break;
 
             case 'S':
-                if(pAvat == PLAYER_W){ pPos[0] += (pPos[0] < 15)? 1 : 0; }
+                if(pAvat == PLAYER_S){ pPos[0] -= (pPos[0] < 15)? 1 : 0; }
             case 's':
             case 0xE050: // [DOWN ARROW]
                 pPos[0] -= (pPos[0] > 0)? 1 : 0;
@@ -125,7 +125,7 @@ int main()
                 break;
 
             case 'D':
-                if(pAvat == PLAYER_W){ pPos[0] += (pPos[0] < 15)? 1 : 0; }
+                if(pAvat == PLAYER_D){ pPos[1] += (pPos[1] < 15)? 1 : 0; }
             case 'd':
             case 0xE04d: // [RIGHT ARROW]
                 pPos[1] += (pPos[1] < 15)? 1 : 0;
