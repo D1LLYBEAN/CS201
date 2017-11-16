@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1510794963 source:c:\users\r0gue\desktop\cs201_project\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+
+1510794577 source:c:\users\r0gue\desktop\cs201_project\mechanics.cpp
+	"mechanics.hpp"
+	"structs.hpp"
+
+1510794628 c:\users\r0gue\desktop\cs201_project\mechanics.hpp
+
+1510793052 c:\users\r0gue\desktop\cs201_project\structs.hpp
+
