@@ -1,16 +1,20 @@
 # depslib dependency file v1.0
-1510794963 source:c:\users\r0gue\desktop\cs201_project\main.cpp
+1510880470 source:c:\users\r0gue\desktop\cs201_project\main.cpp
 	<iostream>
 	<string>
 	<fstream>
+	<conio.h>
+	<stdlib.h>
+	"game.hpp"
+	"input.hpp"
 
-1510794577 source:c:\users\r0gue\desktop\cs201_project\mechanics.cpp
+1510872661 source:c:\users\r0gue\desktop\cs201_project\mechanics.cpp
 	"mechanics.hpp"
 	"structs.hpp"
 
-1510794628 c:\users\r0gue\desktop\cs201_project\mechanics.hpp
+1510867168 c:\users\r0gue\desktop\cs201_project\mechanics.hpp
 
-1510793052 c:\users\r0gue\desktop\cs201_project\structs.hpp
+1510880309 c:\users\r0gue\desktop\cs201_project\structs.hpp
 
 1510799014 source:c:\users\n1nja\desktop\cs201_project\main.cpp
 	<iostream>
@@ -26,4 +30,37 @@
 1510799014 c:\users\n1nja\desktop\cs201_project\mechanics.hpp
 
 1510773471 c:\users\n1nja\desktop\cs201_project\structs.hpp
+
+1510865656 source:c:\users\r0gue\desktop\cs201_project\makemap.cpp
+	"structs.hpp"
+
+1510886435 source:c:\users\r0gue\desktop\cs201_project\game.cpp
+	<iostream>
+	<stdlib.h>
+	"game.hpp"
+	"input.hpp"
+	"intelligence.hpp"
+
+1510867159 c:\users\r0gue\desktop\cs201_project\game.hpp
+
+1510878646 source:c:\users\r0gue\desktop\cs201_project\input.cpp
+	<conio.h>
+	"input.hpp"
+
+1510880697 c:\users\r0gue\desktop\cs201_project\input.hpp
+	<map>
+	<string>
+
+1510886580 source:c:\users\r0gue\desktop\cs201_project\intelligence.cpp
+	<vector>
+	<iostream>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	"intelligence.hpp"
+	"structs.hpp"
+
+1510885783 c:\users\r0gue\desktop\cs201_project\intelligence.hpp
+	<vector>
+	"structs.hpp"
 

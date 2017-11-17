@@ -6,10 +6,11 @@
 	<vector>
 	<string>
 
-1510398264 source:c:\users\r0gue\desktop\cs201\realtimeinput\main.cpp
+1510876015 source:c:\users\r0gue\desktop\cs201\realtimeinput\main.cpp
 	<iostream>
 	<conio.h>
 	<stdlib.h>
 	<vector>
 	<string>
+	<iomanip>
 

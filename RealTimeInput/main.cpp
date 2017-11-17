@@ -14,6 +14,7 @@ using std::endl;
 using std::vector;
 #include <string>
 using std::string;
+#include <iomanip>
 
 // mechanical constants
 const int MAP_SIZE = 16;
@@ -76,15 +77,22 @@ int main()
     cout << "There's not much to it yet, but it's getting better.\n";
     cout << "Please pardon the flicker.\n";
     helpText();
-    int key;
+    unsigned short key;
+    unsigned char key_prefix;
     bool loop = true;
     while (loop)
     {
         key = getch();
-        if (key == 0x00 || key == 0xE0)
+        key_prefix = key;
+        if (key == 0x00)
         {
-            key *= 0x0100; // shift left by 8 bits to get extended code
-            key += getch(); // retrieve second byte of extended code
+            key = 0x0100;   // key needs to be > 0, to separate from standard keys
+            key += getch();
+        }
+        else if (key == 0xE0)
+        {
+            key = 0xE000;
+            key += getch();
         }
 
 //        if (key >= 'a' && key <= 'z')
@@ -150,7 +158,10 @@ int main()
                 break;
         }
         printMap(pPos[0],pPos[1],pAvat);
-        cout << "0x" << std::hex << key;
+        cout << "0x" << std::setfill('0') << std::setw(4) << std::hex << key;
+        if ((key >= ' ' && key <= '~') || (key >= 128 && key <= 254))
+            cout << "\t" << (char)key;
+        cout << endl << "0x" << std::setfill('0') << std::setw(2) << std::hex << (short)key_prefix;
     }
 
     system("CLS");
