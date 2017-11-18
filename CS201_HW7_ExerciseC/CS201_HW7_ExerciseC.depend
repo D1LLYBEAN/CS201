@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1510973732 source:c:\users\r0gue\desktop\cs201\cs201_hw7_exercisec\blanksout.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<vector>
+	<algorithm>
+	<map>
+	<utility>
+
+1510973743 source:c:\users\r0gue\desktop\cs201\cs201_hw7_exercisec\blanksout_test.cpp
+	"blanksout.hpp"
+	<iostream>
+	<map>
+	<string>
+
+1510972375 c:\users\r0gue\desktop\cs201\cs201_hw7_exercisec\blanksout.hpp
+	<map>
+	<string>
+
