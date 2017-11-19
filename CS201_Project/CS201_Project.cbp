@@ -43,6 +43,8 @@
 		<Unit filename="../../CS201_Project/makeMap.cpp" />
 		<Unit filename="../../CS201_Project/mechanics.cpp" />
 		<Unit filename="../../CS201_Project/mechanics.hpp" />
+		<Unit filename="../../CS201_Project/mygetch.cpp" />
+		<Unit filename="../../CS201_Project/mygetch.hpp" />
 		<Unit filename="../../CS201_Project/structs.hpp" />
 		<Extensions>
 			<code_completion />

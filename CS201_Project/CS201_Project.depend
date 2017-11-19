@@ -41,25 +41,27 @@
 
 1510867159 c:\users\r0gue\desktop\cs201_project\game.hpp
 
-1510964841 source:c:\users\r0gue\desktop\cs201_project\input.cpp
+1511047572 source:c:\users\r0gue\desktop\cs201_project\input.cpp
 	<iostream>
 	<string>
 	"input.hpp"
+	"mygetch.hpp"
 
 1510880697 c:\users\r0gue\desktop\cs201_project\input.hpp
 	<map>
 	<string>
 
-1511002107 source:c:\users\r0gue\desktop\cs201_project\intelligence.cpp
+1511045698 source:c:\users\r0gue\desktop\cs201_project\intelligence.cpp
 	<vector>
 	<iostream>
 	<iomanip>
 	<cstdlib>
 	<ctime>
+	<string>
 	"intelligence.hpp"
 	"structs.hpp"
 
-1510996705 c:\users\r0gue\desktop\cs201_project\intelligence.hpp
+1511045636 c:\users\r0gue\desktop\cs201_project\intelligence.hpp
 	<vector>
 	"structs.hpp"
 
@@ -95,4 +97,12 @@
 	<ctime>
 	"intelligence.hpp"
 	"structs.hpp"
+
+1511047518 c:\users\r0gue\desktop\cs201_project\mygetch.hpp
+
+1511048333 source:c:\users\r0gue\desktop\cs201_project\mygetch.cpp
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<stdio.h>
 
