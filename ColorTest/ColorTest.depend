@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1511232921 source:c:\users\r0gue\desktop\cs201\colortest\main.cpp
+	<iostream>
+	<bitset>
+	<vector>
+	<windows.h>
+
