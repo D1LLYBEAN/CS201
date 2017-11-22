@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="CS201_Project" />
+		<Option title="CS201_AAAGAME" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -34,6 +34,8 @@
 		</Compiler>
 		<Unit filename="../../CS201_Project/game.cpp" />
 		<Unit filename="../../CS201_Project/game.hpp" />
+		<Unit filename="../../CS201_Project/graphics.cpp" />
+		<Unit filename="../../CS201_Project/graphics.hpp" />
 		<Unit filename="../../CS201_Project/input.cpp" />
 		<Unit filename="../../CS201_Project/input.hpp" />
 		<Unit filename="../../CS201_Project/intelligence.cpp" />

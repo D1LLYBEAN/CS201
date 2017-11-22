@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1511375857 source:c:\users\n1nja\desktop\cs201\cs201_lab33_part1\main.cpp
+	"student.hpp"
+	"student.hpp"
+	<iostream>
+
+1511376983 c:\users\n1nja\desktop\cs201\cs201_lab33_part1\student.hpp
+	<iostream>
+	<string>
+
+1511376976 source:c:\users\n1nja\desktop\cs201\cs201_lab33_part1\student.cpp
+	"student.hpp"
+
