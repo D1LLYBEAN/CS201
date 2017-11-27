@@ -1,37 +1,18 @@
 #include <iostream>
 using std::cout;
 using std::endl;
-#include <string>
-using std::string;
+#include "adder.hpp"
 
-class myClass{
-public:
-    void printData()
-    {
-        cout << "Data:\n" << _data << "\n\n";
-    }
-    void setData(string newData)
-    {
-        _data = newData;
-    }
-private:
-    string _data;
-};
 
 int main()
 {
-    myClass testClass_1;
-    myClass testClass_2;
+    Adder adder1, adder2, adder3;
 
-    testClass_1.setData("Hello World!");
-    testClass_2.setData("The quick brown fox jumped over the lazy dog.");
+    adder1.add(1);
+    adder2.add(2);
+    adder3.add(3);
 
-    testClass_1.printData();
-    testClass_2.printData();
-
-    myClass testClass_3 = testClass_1;
-
-    testClass_3.printData();
+    cout << "Adder 1: " << Adder::total() << endl;
 
     return 0;
 }
