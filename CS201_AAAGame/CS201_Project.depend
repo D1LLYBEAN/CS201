@@ -22,13 +22,11 @@
 	"game.hpp"
 	"input.hpp"
 
-1510942770 source:c:\users\n1nja\desktop\cs201_project\mechanics.cpp
-	"mechanics.hpp"
-	"structs.hpp"
+1511910391 source:c:\users\n1nja\desktop\cs201_project\mechanics.cpp
 
 1510942770 c:\users\n1nja\desktop\cs201_project\mechanics.hpp
 
-1511810216 c:\users\n1nja\desktop\cs201_project\structs.hpp
+1511913391 c:\users\n1nja\desktop\cs201_project\structs.hpp
 	<vector>
 
 1510865656 source:c:\users\r0gue\desktop\cs201_project\makemap.cpp
@@ -68,7 +66,7 @@
 	<vector>
 	"structs.hpp"
 
-1511374134 source:c:\users\n1nja\desktop\cs201_project\makemap.cpp
+1511904572 source:c:\users\n1nja\desktop\cs201_project\makemap.cpp
 	"structs.hpp"
 	"input.hpp"
 	<iostream>
@@ -76,14 +74,15 @@
 	<cstdlib>
 	<string>
 
-1511807000 source:c:\users\n1nja\desktop\cs201_project\game.cpp
+1511911718 source:c:\users\n1nja\desktop\cs201_project\game.cpp
 	<iostream>
+	"structs.hpp"
 	"game.hpp"
 	"input.hpp"
 	"intelligence.hpp"
 	"makeMap.hpp"
 
-1511807900 c:\users\n1nja\desktop\cs201_project\game.hpp
+1511907403 c:\users\n1nja\desktop\cs201_project\game.hpp
 	"structs.hpp"
 
 1511200790 c:\users\n1nja\desktop\cs201_project\input.hpp
@@ -101,7 +100,7 @@
 	<string>
 	"input.hpp"
 
-1511374886 source:c:\users\n1nja\desktop\cs201_project\intelligence.cpp
+1511911476 source:c:\users\n1nja\desktop\cs201_project\intelligence.cpp
 	<vector>
 	<iostream>
 	<iomanip>
@@ -125,4 +124,8 @@
 	"structs.hpp"
 
 1511375797 source:c:\users\n1nja\desktop\cs201_project\graphics.cpp
+
+1511913383 source:c:\users\n1nja\desktop\cs201_project\structs.cpp
+	<iostream>
+	"structs.hpp"
 
